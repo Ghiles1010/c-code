@@ -110,7 +110,4 @@ def img2text(img):
 		
 	text = tess.image_to_string(thresh1)
 
-
-	cv2.imwrite("Co.png", thresh1)
-	print(text)
 	return text
