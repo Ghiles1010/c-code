@@ -39,8 +39,10 @@ done.addEventListener("click", () =>{
     var formDataToUpload = new FormData(form);
     formDataToUpload.append("image", blob);
 
+    $(document.body).css({'cursor' : 'wait'});
+
     $.ajax({
-        url:"http://127.0.0.1:5000/",
+        url:"https://c-code.herokuapp.com/",
         data: formDataToUpload,
         type:"POST",
         contentType:false,
@@ -55,6 +57,7 @@ done.addEventListener("click", () =>{
             alert("Success: text has been copied to clipboard !");
         },
         complete:function(){
+            $(document.body).css({'cursor' : 'default'});
             console.log("Request finished.");
         }
     });

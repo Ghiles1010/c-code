@@ -1,6 +1,6 @@
 {
 
-	"name": "Rec",
+	"name": "CCode",
 	"version": "1.0",
 	"manifest_version": 2,
 
@@ -11,9 +11,13 @@
 		"<all_urls>" 
 	],
 
+	"icons": {
+		"64": "code.png"
+	  },
+
 	"browser_action":{
 		
-		"default_title": "Take a screen shot!"
+		"default_title": "Take a screen shot of your code!"
 	},
 
 	"background": {
