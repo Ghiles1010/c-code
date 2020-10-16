@@ -4,7 +4,7 @@ var img = document.getElementById("screenShot");
 var test = document.getElementById("test");
 var form = document.getElementById("form");
 var res = "";
-
+var URL = "https://c-code.herokuapp.com/";
 
 var scr_url = window.location.search.substr(1);
 img.setAttribute("src", scr_url)
@@ -42,7 +42,7 @@ done.addEventListener("click", () =>{
     $(document.body).css({'cursor' : 'wait'});
 
     $.ajax({
-        url:"https://c-code.herokuapp.com/",
+        url:URL,
         data: formDataToUpload,
         type:"POST",
         contentType:false,

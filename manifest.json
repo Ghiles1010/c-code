@@ -1,7 +1,7 @@
 {
 
 	"name": "CCode",
-	"version": "1.0",
+	"version": "1.1",
 	"manifest_version": 2,
 
 	"permissions": [
@@ -12,7 +12,12 @@
 	],
 
 	"icons": {
-		"64": "code.png"
+	
+		"64": "code.png",
+		"128": "code128.png",
+		"256": "code256.png",
+		"512": "code512.png"
+		
 	  },
 
 	"browser_action":{
